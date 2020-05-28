@@ -1,0 +1,381 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Go Bike ..Get a ride in seconds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Motorbike Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{% static 'homepage/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
+<link href="{% static 'homepage/css/style.css' %}" type="text/css" rel="stylesheet" media="all"> 
+<link href="{% static 'homepage/css/font-awesome.css' %}" rel="stylesheet"> <!-- font-awesome icons -->
+<link rel="stylesheet" href="{% static 'homepage/css/lightbox.css' %}">
+<!--//Custom Theme files-->
+<!-- js -->
+<script src="{% static 'homepage/js/jquery-2.2.3.min.js' %}"></script>  
+<!-- //js -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet"> 
+<!-- //web-fonts --> 
+</head> 
+<body> 
+	<!-- banner -->
+	<div id="home" class="banner">
+		<div class="banner-agileinfo">
+			<!-- header -->
+			<div class="header">
+				<div class="container">		
+					<div class="logo">
+						<!-- <h1><a href="index.html">GO Bike</a></h1> -->
+						<img width="200" src="{% static 'custom_img/logo_hor.png' %}">
+					</div> 
+					<div class="menu">
+						<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+						<nav>  
+							<a href="#home" class="active scroll">Home</a> 
+							<a href="#about" class="scroll">About</a>  
+							<a href="#services" class="scroll">Services</a>  
+							<a href="#news" class="scroll">News</a>
+							<a href="#gallery" class="scroll">Gallery</a> 
+							<a href="#contact" class="scroll">Contact</a> 
+						</nav>
+						<script>
+						(function($){
+							// Menu Functions
+							$(document).ready(function(){
+							$('#menuToggle').click(function(e){
+								var $parent = $(this).parent('.menu');
+							  $parent.toggleClass("open");
+							  var navState = $parent.hasClass('open') ? "hide" : "show";
+							  $(this).attr("title", navState + " navigation");
+									// Set the timeout to the animation length in the CSS.
+									setTimeout(function(){
+										console.log("timeout set");
+										$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+									}, 200);
+								e.preventDefault();
+							});
+						  });
+						})(jQuery);
+						</script>
+		 
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //header -->
+			<div class="banner-text">
+				<div class="container">		
+					<h2>Get a Ride in seconds <br> call us now <span style="color: yellow;">099-017-1255</span></h2>
+					<a href="#about" class="buy btn-wayra scroll"> About Us</a>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- welcome -->	
+	<div id="about" class="welcome">
+		<div class="container"> 
+			<div class="welcome-agileinfo">
+				<div class="col-md-6 w3ls_welcome_left"> 
+					<div class="w3ls_welcome_right1">
+						<h3 class="agileits-title"><span>A</span>bout Us</h3>
+						<!-- <h6>Lorem ipsum dolor <span> Consectetur </span> sit adipisicing. </h6> -->
+						<p>We are an australian based company that aims at providing faster, cheaper and quicker transportation across the country in motorbikes. We also aim at providing employment to all Bike owners who join our platform and freelance for deliveries and transport</p>
+					</div> 
+				</div>
+				<div class="col-md-6 w3ls_welcome_right">  	
+					<div class="agileits_w3layouts_welcome_grid">
+						<img src="{% static 'homepage/images/img1.jpg' %}" alt=" " class="img-responsive" />
+					</div> 
+				</div> 
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //welcome -->	
+	<!-- slid -->
+	<div class="slid jarallax">
+		<div class="slid-text">
+			<h4>24/7 Customer Service Support</h4>
+			<p>Our customer service team can find you a ride any time of the day and night </p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //slid -->
+	<!-- services -->
+	<div id="services" class="services">
+		<div class="container"> 
+			<h3 class="agileits-title w3title2"><span>S</span>ervices</h3>
+			<div class="services-row-agileinfo">
+				<div class="col-sm-4 col-xs-6 services-w3grid">
+					<span class="fa fa-heart hi-icon" aria-hidden="true"></span>
+					<h5>Convenience</h5>
+					<p>our riders arive within seconds</p>
+				</div>
+				<div class="col-sm-4 col-xs-6 services-w3grid">
+					<span class="fa fa-wrench hi-icon" aria-hidden="true"></span>
+					<h5>Professional</h5>
+					<p>Our riders are qualified and professional at what they do</p>
+				</div>
+				<div class="col-sm-4 col-xs-6 services-w3grid">
+					<span class="fa fa-bell hi-icon" aria-hidden="true"></span>
+					<h5>Notification</h5>
+					<p>Get notified when your ride arrives</p>
+				</div> 
+				<div class="col-sm-4 col-xs-6 services-w3grid">
+					<span class="fa fa-motorcycle hi-icon" aria-hidden="true"></span>
+					<h5>Rent a bike</h5>
+					<p>You can as well Rent a bike within our platform</p>
+				</div>
+				<div class="col-sm-4 col-xs-6 services-w3grid">
+					<span class="fa fa-check-square-o hi-icon" aria-hidden="true"></span>
+					<h5>Job vacancies</h5>
+					<p>We take job applications from qualified riders</p>
+				</div>
+				<div class="col-sm-4 col-xs-6 services-w3grid">
+					<span class="fa fa-gears hi-icon" aria-hidden="true"></span>
+					<h5>servicing</h5>
+					<p>Our bikes are serviced often to ensure comfort and performance</p>
+				</div> 
+				<div class="clearfix"> </div>
+			</div> 
+		 </div>
+	</div>
+	<!-- //services -->
+	<!-- news -->
+	<div id="news" class="news">   
+		<div class="container"> 
+			<h3 class="agileits-title w3title2"><span>N</span>ews </h3>
+			<div class="news-agileinfo">
+				<div class="col-md-4 news-w3grid">
+					<img src="{% static 'homepage/images/img2.jpg' %}" alt="">
+					<div class="news-w3grid-info">
+						<h5><span>10</span> April </h5>
+						<h4>Donec cursus</h4>
+						<p>Check out the fastest bike in our collection</p>
+						<div class="article-links">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 news-w3grid">
+					<img src="{% static 'homepage/images/img3.jpg' %}" alt="">
+					<div class="news-w3grid-info">
+						<h5><span>15</span> April </h5>
+						<h4>Suscipit dapib</h4>
+						<p>A new bike is available for rent</p>
+						<div class="article-links">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 news-w3grid">
+					<img src="{% static 'homepage/images/img4.jpg' %}" alt="">
+					<div class="news-w3grid-info">
+						<h5><span>18</span> April </h5>
+						<h4>Tortor sed</h4>
+						<p>This is the most expensive bike owned by gobike company</p>
+						<div class="article-links">
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div> 
+		</div> 
+	</div>
+	<!-- //news --> 
+	<!-- gallery -->
+	<div class="gallery" id="gallery">	 
+		<h3 class="agileits-title w3title2"><span>G</span>allery</h3>
+		<div class="gallery-info">	
+			<div class="col-sm-6 gallery-grids glry-grid1">
+				<div class="gallery-grids-top">
+					<a class="b-link-stripe b-animate-go" href="{% static 'homepage/images/g3.jpg' %}" data-lightbox="example-set" >
+						<img src="{% static 'homepage/images/g3.jpg' %}" class="img-responsive" alt=""/>
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left"> 
+								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+							</span>					
+						</div>
+					</a>
+				</div>
+				<div class="gallery-grids-top">
+					<div class="col-sm-6 col-xs-6 bottom-grids">
+						<a class="b-link-stripe b-animate-go" href="{% static 'homepage/images/img2.jpg' %}" data-lightbox="example-set" >
+							<img src="{% static 'homepage/images/img2.jpg' %}" class="img-responsive" alt=""/>
+							<div class="b-wrapper">
+								<span class="b-animate b-from-left">
+									<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+								</span>					
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-6 col-xs-6 bottom-grids">
+						<a class="b-link-stripe b-animate-go" href="{% static 'homepage/images/img4.jpg' %}" data-lightbox="example-set" >
+							<img src="{% static 'homepage/images/img4.jpg' %}" class="img-responsive" alt=""/>
+							<div class="b-wrapper">
+								<span class="b-animate b-from-left">
+									<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+								</span>					
+							</div>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-6 gallery-grids glry-grid2">
+				<a class="b-link-stripe b-animate-go" href="{% static 'homepage/images/g2.jpg' %}" data-lightbox="example-set" >
+					<img src="{% static 'homepage/images/g2.jpg' %}" class="img-responsive" alt=""/>
+					<div class="b-wrapper">
+						<span class="b-animate b-from-left">
+							<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+						</span>					
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 col-xs-6 gallery-grids glry-grid3">
+				<a class="b-link-stripe b-animate-go" href="{% static 'homepage/images/g1.jpg' %}" data-lightbox="example-set" >
+					<img src="{% static 'homepage/images/g1.jpg' %}" class="img-responsive" alt=""/>
+					<div class="b-wrapper">
+						<span class="b-animate b-from-left">
+							<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+						</span>					
+					</div>
+				</a>
+				<a class="b-link-stripe b-animate-go" href="{% static 'homepage/images/img1.jpg' %}" data-lightbox="example-set" >
+					<img src="{% static 'homepage/images/img1.jpg' %}" class="img-responsive" alt=""/>
+					<div class="b-wrapper">
+						<span class="b-animate b-from-left">
+							<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+						</span>					
+					</div>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<script src="{% static 'homepage/js/lightbox-plus-jquery.min.js' %}"> </script>
+		</div>
+	</div>
+	<!-- //gallery -->
+	<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container"> 
+			<h3 class="agileits-title w3title2"><span>C</span>ontact Us</h3>
+			<div class="contact-grids">
+				<div class="col-md-5 address">
+					<h4>Get in touch with us</h4>
+					<p class="cnt-p">You can reach us via our customer care service or via chat and email</p>
+					<div class="agile_social_icons">
+						<ul class="agileits_social_list">
+							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>  
+					<p>Broome St, NY 10002, Australia. </p>
+					<p>Telephone : +01 111 222 3333</p>
+					<p>FAX : +1 888 4444</p>
+					<p>Email : <a href="mailto:example@mail.com">service@gobike.com</a></p>
+				</div>
+				<div class="col-md-7 contact-form">
+					<form action="#" method="post">
+						<input type="text" name="Name" placeholder="Name" required="">
+						<input type="email" class="email" name="Email" placeholder="Email" required="">
+						<textarea placeholder="Message" name="Message" required=""></textarea>
+						<input type="submit" value="SUBMIT">
+					</form>
+				</div>
+				<div class="clearfix"> </div>	
+			</div>
+		</div>
+	</div>
+	<!-- //contact --> 
+	<!-- footer -->
+	<div class="footer">
+		<div class="container"> 
+			<div class="footer-w3lsrow">
+				<div class="col-md-4 footer-grids footer-address">
+					<h3>Contact Us :</h3>
+					<ul>
+						<li><i class="glyphicon glyphicon-send"></i> 123 San Sebastian <span> Australia. </span></li>
+						<li><i class="glyphicon glyphicon-phone"></i> +11 222 3333 <span> +00 1111 222 </span></li>
+						<li><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:example@mail.com"> service@gobike.com</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-grids subscribe">
+					<h3>Newsletter :</h3> 
+					<form action="#" method="post">
+						<input type="email" name="Email" placeholder="Your Email" required="">
+						<input type="submit" value="Subscribe">
+						<div class="clearfix"> </div> 
+					</form>
+					
+				</div>
+				<div class="col-md-4 footer-grids footer-icons">
+					<h3>Follow Us :</h3>
+					<div class="agile_social_icons">
+						<ul class="agileits_social_list">
+							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>  
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->	  
+	<!-- jarallax -->  
+	<script src="{% static 'homepage/js/SmoothScroll.min.js' %}"></script> 
+	<script src="{% static 'homepage/js/jarallax.js' %}"></script> 
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>  
+	<!-- //jarallax -->   
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{% static 'homepage/js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'homepage/js/easing.js' %}"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'homepage/js/bootstrap.js' %}"></script>
+</body>
+</html>
